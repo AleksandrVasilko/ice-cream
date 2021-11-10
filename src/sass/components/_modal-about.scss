@@ -1,0 +1,133 @@
+.backdrop-about {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 184, 202, 0.3);
+  opacity: 1;
+  transition: opacity 500ms $timer-function;
+}
+.backdrop-about.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-about {
+  position: absolute;
+  width: 300px;
+  height: 570px;
+  top: 50%;
+  left: 50%;
+  padding: 30px;
+  // background-color: #ffffff;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(212, 20, 67, 0.47);
+  background-color: $background-abouts;
+  background-image: url(../images/splashing-milk_1280.png);
+  // background-repeat: repeat;
+  background-position: 100%;
+
+  /* @media screen and (min-width: 480px) {
+    width: 400px;
+    height: 600px;
+  }*/
+  @media screen and (min-width: 768px) {
+    background-image: none;
+    width: 500px;
+    height: 620px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 750px;
+    height: 650px;
+  }
+  &__close-box {
+    position: relative;
+  }
+  &__close-item {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+  }
+  &__close-icon {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+
+    fill: $modal-close;
+    transition: 250ms $timer-function;
+    @media screen and (min-width: 480px) {
+      width: 20px;
+      height: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 25px;
+      height: 25px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__close-icon:hover {
+    fill: $modal-close-hover;
+    transform: rotate(90deg);
+  }
+  &__close-item:focus .modal-franchise__close-icon {
+    fill: $modal-close-hover;
+    transform: rotate(90deg);
+  }
+}
+.modal-about__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $title-color-second;
+  margin-top: 40px;
+}
+.modal-about__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 170%;
+  color: $secondary-text-color;
+  margin-bottom: 0;
+  margin-top: 40px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 170%;
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+  }
+}
+.modal-about__text-accent {
+  color: $accent-colot;
+}
+.modal-about__box {
+  display: flex;
+}
+.modal-about__picture {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin: auto;
+  }
+}

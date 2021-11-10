@@ -1,0 +1,263 @@
+.galery-section {
+  background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
+}
+
+.galery-section__box {
+  position: relative;
+  width: 320px;
+  height: 122px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    height: 264px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 430px;
+  }
+
+  @media screen and(min-width:768px) {
+    width: 768px;
+  }
+
+  @media screen and(min-width:1280px) {
+    width: 1280px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.galery-section__image {
+  position: absolute;
+  border-radius: 5px;
+  width: 40px;
+
+  @media screen and(min-width:768px) {
+    width: 86px;
+  }
+
+  @media screen and(min-width:1280px) {
+    width: 140px;
+  }
+
+  @media screen and (min-width: 768px) {
+    border-radius: 10px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    border-radius: 20px;
+  }
+}
+
+.img1 {
+  top: 40px;
+  left: 20px;
+
+  @media screen and(min-width:768px) {
+    top: 86px;
+    left: 73px;
+  }
+
+  @media screen and(min-width:1280px) {
+    top: 141px;
+    left: 134px;
+  }
+}
+
+.img2 {
+  top: 24px;
+  left: 62px;
+  z-index: 101;
+
+  @media screen and(min-width:768px) {
+    top: 53px;
+    left: 162px;
+  }
+
+  @media screen and(min-width:1280px) {
+    top: 86px;
+    left: 279px;
+  }
+}
+
+.img3 {
+  top: 66px;
+  left: 62px;
+  z-index: 101;
+
+  @media screen and(min-width:768px) {
+    top: 142px;
+    left: 162px;
+  }
+
+  @media screen and(min-width:1280px) {
+    top: 231px;
+    left: 279px;
+  }
+}
+
+.img4 {
+  top: 0;
+  left: 104px;
+  width: 80px;
+  z-index: 102;
+
+  @media screen and(min-width:768px) {
+    top: 0px;
+    left: 251px;
+  }
+
+  @media screen and(min-width:1280px) {
+    top: 0px;
+    left: 424px;
+  }
+
+  @media screen and(min-width:768px) {
+    width: 176px;
+  }
+
+  @media screen and(min-width:1280px) {
+    width: 284px;
+  }
+}
+
+.img5 {
+  top: 82px;
+  left: 104px;
+
+  @media screen and(min-width:768px) {
+    top: 178px;
+    left: 251px;
+  }
+
+  @media screen and(min-width:1280px) {
+    top: 292px;
+    left: 424px;
+  }
+}
+
+.img6 {
+  top: 28px;
+  left: 186px;
+
+  @media screen and(min-width:768px) {
+    top: 60px;
+    left: 429px;
+  }
+
+  @media screen and(min-width:1280px) {
+    top: 86px;
+    left: 715px;
+  }
+}
+
+.img7 {
+  top: 70px;
+  left: 186px;
+
+  @media screen and(min-width:768px) {
+    top: 149px;
+    left: 429px;
+  }
+
+  @media screen and(min-width:1280px) {
+    top: 231px;
+    left: 715px;
+  }
+}
+
+.img8 {
+  top: 14px;
+  left: 228px;
+  z-index: 103;
+
+  @media screen and(min-width:768px) {
+    top: 32px;
+    left: 518px;
+  }
+
+  @media screen and(min-width:1280px) {
+    top: 52px;
+    left: 860px;
+  }
+}
+
+.img9 {
+  top: 56px;
+  left: 228px;
+  z-index: 103;
+
+  @media screen and(min-width:768px) {
+    top: 121px;
+    left: 518px;
+  }
+
+  @media screen and(min-width:1280px) {
+    top: 197px;
+    left: 860px;
+  }
+}
+
+.img10 {
+  top: 44px;
+  left: 270px;
+
+  @media screen and(min-width:768px) {
+    top: 94px;
+    left: 607px;
+  }
+
+  @media screen and(min-width:1280px) {
+    top: 152px;
+    left: 1004px;
+  }
+}
+
+.scale {
+  transition: 2s; /* Время эффекта */
+}
+
+.scale1:hover {
+  transform: translateX(-100%); /* Смещение влево */
+}
+
+.scale2:hover {
+  transform: translateX(100%); /* Смещение вправо */
+}
+
+.scale3:hover {
+  transform: translate(-50%, -100%); /* Смещение влево-вверх*/
+}
+
+.scale4:hover {
+  transform: translate(-50px, 100px); /* Смещение влево-вниз */
+}
+
+.scale5:hover {
+  transform: scale(1.5); /* Увеличение */
+}
+
+.scale6:hover {
+  transform: translateY(-100%); /* Смещение */
+}
+
+.scale7:hover {
+  transform: translateY(100%); /* Смещение */
+}
+
+.scale8:hover {
+  transform: translate(50%, -70%); /* Смещение влево-вверх*/
+}
+
+.scale9:hover {
+  transform: translate(50px, 130px); /* Смещение влево-вниз */
+}
